@@ -1,8 +1,8 @@
-public class HeightofTree {
+public class _02CountNode {
     public static class Node {
         int data;
-        Node left = null;
-        Node right = null;
+        Node left;
+        Node right;
 
         public Node(int data) {
             this.data = data;
@@ -11,35 +11,27 @@ public class HeightofTree {
         }
     }
 
-    public int height(Node root) { // O(n) Linear
+    public int Count(Node root) {
         if (root == null) {
             return 0;
         }
 
-        int LH = height(root.left);
-        int RH = height(root.right);
+        int LC = Count(root.left);
+        int RC = Count(root.right);
 
-        return Math.max(LH, RH) + 1;
+        return (LC + RC) + 1;
     }
 
     public static void main(String[] args) {
-        /*
-         ** 1
-         * / \
-         * 2 3
-         * / \ / \
-         * 4 5 6 7
-         */
-        HeightofTree tree = new HeightofTree();
 
+        _02CountNode Count = new _02CountNode();
         Node root = new Node(1);
         root.left = new Node(2);
         root.right = new Node(3);
         root.left.left = new Node(4);
         root.left.right = new Node(5);
         root.right.left = new Node(6);
-        root.right.right = new Node(7);
 
-        System.out.println(tree.height(root)); // Height = 3
+        System.out.println(Count.Count(root)); //Count = 6
     }
 }

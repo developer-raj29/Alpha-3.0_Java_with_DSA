@@ -1,4 +1,4 @@
-public class SumNode {
+public class _05SumNode {
     public static class Node {
         int data;
         Node left = null;
@@ -23,7 +23,7 @@ public class SumNode {
     }
 
     public static void main(String[] args) {
-        SumNode sum = new SumNode();
+        _05SumNode sum = new _05SumNode();
         Node root = new Node(1);
         root.left = new Node(2);
         root.right = new Node(3);

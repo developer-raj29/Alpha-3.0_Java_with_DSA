@@ -2,7 +2,7 @@ import java.util.*;
 import java.util.LinkedList;
 // import java.util.Queue;
 
-public class BinaryTreeB {
+public class _01BinaryTreeB {
     public static class Node {
         int data;
         Node left;
