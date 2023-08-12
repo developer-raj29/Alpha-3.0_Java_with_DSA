@@ -28,15 +28,15 @@ public class _01OOPS {
         p1.setcolor("Yellow");
         System.out.println(p1.getcolor());
 
-        // BankAccount myAcc = new BankAccount();
-        // myAcc.UserName = "Rajyadav";
+        BankAccount myAcc = new BankAccount();
+        myAcc.UserName = "Rajyadav";
         // myAcc.setpassword = ("abcd");
     }
 }
 
 class BankAccount {
     public String UserName;
-    // private String password;
+    private String password;
 
     // default void setpassword(String Pwd) {
     // password = Pwd;
