@@ -61,7 +61,7 @@ public class _06SudokuSolver {
     public static void PrintSudoku(int Sudoku[][]) {
         for (int i = 0; i < Sudoku.length; i++) {
             for (int j = 0; j < Sudoku[0].length; j++) {
-                System.out.print(Sudoku[i][j] + "");
+                System.out.print(Sudoku[i][j] + " ");
             }
             System.out.println();
         }
@@ -69,16 +69,15 @@ public class _06SudokuSolver {
 
     public static void main(String[] args) {
         int Sudoku[][] = {
-                { 0, 0, 8, 0, 0, 0, 0, 0, 0 },
-                { 4, 9, 0, 1, 5, 7, 0, 0, 2 },
-                { 0, 0, 3, 0, 0, 4, 1, 9, 0 },
-                { 1, 8, 5, 0, 6, 0, 0, 2, 0 },
-                { 0, 0, 0, 0, 2, 0, 0, 6, 0 },
-                { 9, 6, 0, 4, 0, 5, 3, 0, 0 },
-                { 0, 3, 8, 0, 7, 2, 0, 0, 4 },
-                { 0, 4, 9, 0, 3, 0, 0, 5, 7 },
-                { 8, 2, 7, 0, 0, 9, 0, 1, 3 }
-        };
+                { 3, 0, 6, 5, 0, 8, 4, 0, 0 },
+                { 5, 2, 0, 0, 0, 0, 0, 0, 0 },
+                { 0, 8, 7, 0, 0, 0, 0, 3, 1 },
+                { 0, 0, 3, 0, 1, 0, 0, 8, 0 },
+                { 9, 0, 0, 8, 6, 3, 0, 0, 5 },
+                { 0, 5, 0, 0, 9, 0, 6, 0, 0 },
+                { 1, 3, 0, 0, 0, 0, 2, 5, 0 },
+                { 0, 0, 0, 0, 0, 0, 0, 7, 4 },
+                { 0, 0, 5, 2, 0, 6, 3, 0, 0 } };
 
         // SudokuSolver(Sudoku, 0, 0);
         // PrintSudoku(Sudoku);
