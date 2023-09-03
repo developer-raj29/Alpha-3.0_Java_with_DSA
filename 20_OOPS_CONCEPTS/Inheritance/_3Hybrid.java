@@ -1,4 +1,5 @@
-public class Hybrid {
+public class _3Hybrid {
+
     public static void main(String[] args) {
         Dog Dobby = new Dog();
         Dobby.dog();

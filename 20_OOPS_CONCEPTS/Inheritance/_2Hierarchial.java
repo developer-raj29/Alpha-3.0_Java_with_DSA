@@ -1,12 +1,15 @@
 
-public class Hierarchial {
+public class _2Hierarchial {
     public static void main(String[] args) {
-        // Fish shark = new Fish();
-        // shark.eat();
-        Dog Dobby = new Dog();
-        Dobby.eat();
-        Dobby.legs = 4;
-        System.out.println(Dobby.legs);
+        Fish shark = new Fish();
+        shark.eat();
+        shark.breathe();
+        shark.swim();
+        // shark.fly();
+        // Dog Dobby = new Dog();
+        // Dobby.eat();
+        // Dobby.legs = 4;
+        // System.out.println(Dobby.legs);
     }
 }
 
