@@ -34,6 +34,7 @@ public class LinkedList {
         head = newNode;
     }
 
+    // add last Time Complexity - O(n) constant time
     public void addLast(int data) {
         // step 1 - create a new node
         Node newNode = new Node(data);
@@ -90,12 +91,15 @@ public class LinkedList {
         if (size == 0) {
             System.out.println("LL is epmty");
             return Integer.MIN_VALUE;
+
         } else if (size == 1) {
             int value = head.data;
             head = tail = null;
             size = 0;
             return value;
+
         }
+
         int value = head.data;
         head = head.next;
         size--;
@@ -106,11 +110,13 @@ public class LinkedList {
         if (size == 0) {
             System.out.println("LL is epmty");
             return Integer.MIN_VALUE;
+
         } else if (size == 1) {
             int value = head.data;
             head = tail = null;
             size = 0;
             return value;
+
         }
 
         // prev : i = size - 2
@@ -148,6 +154,7 @@ public class LinkedList {
         if (head.data == key) {
             return 0;
         }
+
         int idx = helper(head.next, key);
         if (idx == -1) {
             return -1;
@@ -258,16 +265,29 @@ public class LinkedList {
         LL.addNode(2, 3);
         LL.Print(); // 1->2->3->4->5->null
         System.out.println("LinkedList Size is : " + LL.size); // 5
+        // System.out.println();
+
         // LL.removeFirst();
-        // LL.Print();
+        // LL.Print(); // 2->3->4->5->null
+        // System.out.println("LinkedList Size is : " + LL.size); // 4
+        // System.out.println();
+
         // LL.removeLast(); // 2->3->4->null
         // LL.Print();
+        // System.out.println("LinkedList Size is : " + LL.size); // 3
 
-        // System.out.println(LL.search(4));
-        // // System.out.println(LL.search(5));
-        // // System.out.println(LL.search(10));
+        /*
+         * System.out.println("LL in Search No. is 4 : " + LL.search(4) + " index");
+         * LL in Search No. is 4 : 3 index
+         * 
+         * System.out.println("LL in Search No. is 5 : " + LL.search(5) + " index");
+         * LL in Search No. is 5 : 4 index
+         * 
+         * System.out.println("LL in Search No. is 10 : " + LL.search(10) + " index");
+         * LL in Search No. is 10 : -1 index
+         */
 
-        // System.out.println(LL.RecusiveSearch(3));
+        System.out.println("Index : " + LL.RecusiveSearch(5));
         // LL.Reverse();
         // LL.Print();
 
