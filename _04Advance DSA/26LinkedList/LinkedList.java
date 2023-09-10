@@ -13,6 +13,9 @@ public class LinkedList {
     public static Node tail;
     public int size;
 
+    /*
+     * Methods :- add(), remove() , search() , print()
+     */
     // add first Time Complexity - O(n) constant time
     public void addFirst(int data) {
         // step 1 - create a new node
@@ -47,9 +50,6 @@ public class LinkedList {
         // step 3 - tail = newNode
         tail = newNode;
     }
-    /*
-     * Methods :- add(), remove() , search() , print()
-     */
 
     public void Print() {
         if (head == null) {
@@ -257,7 +257,7 @@ public class LinkedList {
         LL.addLast(5);
         LL.addNode(2, 3);
         LL.Print(); // 1->2->3->4->5->null
-        System.out.println(LL.size); // 5
+        System.out.println("LinkedList Size is : " + LL.size); // 5
         // LL.removeFirst();
         // LL.Print();
         // LL.removeLast(); // 2->3->4->null
@@ -271,7 +271,7 @@ public class LinkedList {
         // LL.Reverse();
         // LL.Print();
 
-        LL.removeNthNode(3);
-        LL.Print();
+        // LL.removeNthNode(3);
+        // LL.Print();
     }
 }
