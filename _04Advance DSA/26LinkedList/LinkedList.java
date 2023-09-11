@@ -186,11 +186,11 @@ public class LinkedList {
         Node temp = head;
         while (temp != null) {
             temp = temp.next;
-            size++;
+            size++; // 5
         }
 
         if (Nth == size) {
-            head = head.next;
+            head = head.next; // removeFirst
             return;
         }
 
@@ -209,13 +209,14 @@ public class LinkedList {
 
     // Slow - Fast Approach
     public Node FindMid(Node head) {
-        Node slow = head;
-        Node fast = head;
+        Node slow = head; // +1
+        Node fast = head; // +2
 
         while (fast != null && fast.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
+            slow = slow.next; // +1
+            fast = fast.next.next; // +2
         }
+
         return slow;
     }
 
@@ -225,7 +226,7 @@ public class LinkedList {
         }
 
         // step1 - find mid
-        Node midNode = FindMid(head);
+        Node midNode = FindMid(head); // call find mid
 
         // step 2 - reverse 2nd half
         Node prev = null;
@@ -239,8 +240,8 @@ public class LinkedList {
             curr = next;
         }
 
-        Node right = prev;
-        Node left = head;
+        Node right = prev; // right half head
+        Node left = head; // left half head
 
         // xtep 3 - check left half
         while (right != null) {
@@ -258,13 +259,13 @@ public class LinkedList {
         LinkedList LL = new LinkedList();
         // LL.head = new Node(1);
         // LL.head.next = new Node(2);
-        LL.addFirst(2);
-        LL.addFirst(1);
-        LL.addLast(4);
-        LL.addLast(5);
-        LL.addNode(2, 3);
-        LL.Print(); // 1->2->3->4->5->null
-        System.out.println("LinkedList Size is : " + LL.size); // 5
+        // LL.addFirst(2);
+        // LL.addFirst(1);
+        // LL.addLast(4);
+        // LL.addLast(5);
+        // LL.addNode(2, 3);
+        // LL.Print(); // 1->2->3->4->5->null
+        // System.out.println("LinkedList Size is : " + LL.size); // 5
         // System.out.println();
 
         // LL.removeFirst();
@@ -287,11 +288,18 @@ public class LinkedList {
          * LL in Search No. is 10 : -1 index
          */
 
-        System.out.println("Index : " + LL.RecusiveSearch(5));
+        // System.out.println("Index : " + LL.RecusiveSearch(5));
         // LL.Reverse();
         // LL.Print();
 
-        // LL.removeNthNode(3);
+        // LL.removeNthNode(2);
         // LL.Print();
+
+        LL.addFirst(2);
+        LL.addFirst(1);
+        LL.addLast(2);
+        LL.addLast(1);
+        LL.Print(); // 1->2->2->1->null
+        System.out.println(LL.CheckPalindrome()); // true
     }
 }
