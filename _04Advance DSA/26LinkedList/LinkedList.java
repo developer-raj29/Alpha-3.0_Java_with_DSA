@@ -208,7 +208,7 @@ public class LinkedList {
     }
 
     // Slow - Fast Approach
-    public Node FindMid(Node head) {
+    private Node FindMid(Node head) {
         Node slow = head; // +1
         Node fast = head; // +2
 
@@ -221,7 +221,7 @@ public class LinkedList {
     }
 
     public boolean CheckPalindrome() {
-        if (head == null || head.next != null) {
+        if (head == null || head.next == null) {
             return true;
         }
 
@@ -229,12 +229,11 @@ public class LinkedList {
         Node midNode = FindMid(head); // call find mid
 
         // step 2 - reverse 2nd half
-        Node prev = null;
         Node curr = midNode;
-        Node next;
+        Node prev = null;
 
         while (curr != null) {
-            next = curr.next;
+            Node next = curr.next;
             curr.next = prev;
             prev = curr;
             curr = next;
@@ -297,9 +296,8 @@ public class LinkedList {
 
         LL.addFirst(2);
         LL.addFirst(1);
-        LL.addLast(2);
         LL.addLast(1);
-        LL.Print(); // 1->2->2->1->null
+        LL.Print(); // 1->2->1->null
         System.out.println(LL.CheckPalindrome()); // true
     }
 }

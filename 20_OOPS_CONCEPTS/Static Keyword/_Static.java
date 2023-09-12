@@ -1,16 +1,16 @@
 
 public class _Static {
     public static void main(String[] args) {
-        Student s1 = new Student();
-        s1.SchoolName = "NBM";
+        // Student s1 = new Student();
+        // s1.SchoolName = "NBM";
 
-        Student s2 = new Student();
-        // s2.SchoolName = "ABC";
-        System.out.println(s2.SchoolName);
+        // Student s2 = new Student();
+        // // s2.SchoolName = "ABC";
+        // System.out.println(s2.SchoolName);
 
-        Student s3 = new Student();
-        s3.SchoolName = "ABC";
-        System.out.println(s3.SchoolName);
+        // Student s3 = new Student();
+        // s3.SchoolName = "ABC";
+        // System.out.println(s3.SchoolName);
 
     }
 }
