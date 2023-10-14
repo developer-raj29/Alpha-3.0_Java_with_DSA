@@ -9,14 +9,14 @@ public class _59Inverted_HalfPyramid {
             }
             // inner loop
             for (int j = 1; j <= i; j++) {
-                System.out.print(" *");
+                System.out.print(" *" + j);
             }
             System.out.println();
         }
     }
 
     public static void main(String[] args) {
-        Inverted_HalfPyramid(5);
+        Inverted_HalfPyramid(3);
     }
 }
 // *
