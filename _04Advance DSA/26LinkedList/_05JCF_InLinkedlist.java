@@ -13,11 +13,13 @@ public class _05JCF_InLinkedlist {
         LL.addLast(2);
         LL.addFirst(0);
 
-        System.out.println(LL); // [0, 1, 2]
+        System.out.println("LinkedList: " + LL); // [0, 1, 2]
         // remove in LL
         LL.removeFirst();
-        System.out.println(LL); // [1, 2]
+        System.out.println("RemoveFirst: " + LL); // [1, 2]
         LL.removeLast();
-        System.out.println(LL); // [1]
+        System.out.println("RemoveLast: " + LL); // [1]
+        LL.removeLast();
+        System.out.println("RemoveLast: " + LL); // []
     }
 }

@@ -12,20 +12,36 @@ public class _04DectectAndRemoveCycle {
     public static Node head;
     public static Node tail;
 
-    public static boolean IsCycle() { // Floyd's Cycle Finding Algorithm
+    /*
+     * public static boolean IsCycle() { // Floyd's Cycle Finding Algorithm
+     * // Node Slow = head;
+     * // Node Fast = head;
+     * 
+     * // while (Fast != null && Fast.next != null) {
+     * // Slow = Slow.next; // +1 agee badega
+     * // Fast = Fast.next.next; // +2 agee badega
+     * 
+     * // if (Slow == Fast) { // when both are equal
+     * // return true; // when cycle is exists - Ans true
+     * // }
+     * // }
+     * 
+     * // return false; // when cycle is does'nt exists - Ans false
+     * // }
+     */
+
+    public static boolean IsCycle() {
         Node Slow = head;
         Node Fast = head;
 
         while (Fast != null && Fast.next != null) {
-            Slow = Slow.next; // +1 agee badega
-            Fast = Fast.next.next; // +2 agee badega
-
-            if (Slow == Fast) { // when both are equal
-                return true; // when cycle is exists - Ans true
+            Slow = Slow.next;
+            Fast = Fast.next.next;
+            if (Slow == Fast) {
+                return true;
             }
         }
-
-        return false; // when cycle is does'nt exists - Ans false
+        return false;
     }
 
     public static void RemoveCycle() {
@@ -47,9 +63,9 @@ public class _04DectectAndRemoveCycle {
         if (cycle == false) {
             return;
         }
-        // find meeting
+        // find meeting point
         slow = head;
-        Node prev = null;
+        Node prev = null; // Last node
 
         while (slow != fast) {
             prev = fast;
@@ -61,7 +77,7 @@ public class _04DectectAndRemoveCycle {
     }
 
     public static void main(String[] args) {
-        // IsCycle() ;
+        // IsCycle();
 
         // head = new Node(1); // 1 -> 2 -> 3 -> 1
         // head.next = new Node(2);
@@ -69,8 +85,7 @@ public class _04DectectAndRemoveCycle {
         // head.next.next.next = new Node(4);
         // head.next.next.next.next = new Node(5);
         // head.next.next.next.next.next = head; // 1->2->3->4->-5->1
-
-        // RemoveCycle();
+        // System.out.println(IsCycle()); // RemoveCycle();
 
         head = new Node(1); // 1->2->3->2
         Node temp = new Node(2);
@@ -78,8 +93,8 @@ public class _04DectectAndRemoveCycle {
         head.next.next = new Node(3);
         head.next.next.next = temp;
 
-        System.out.println("Cycle is exists : " + IsCycle()); // when Cycle is exists : true
+        System.out.println("Cycle is exists : " + IsCycle()); // when Cycle is exists: true
         RemoveCycle();
-        System.out.println("Cycle is remove : " + IsCycle()); // when Cycle is remove : false
+        System.out.println("Cycle is remove : " + IsCycle()); // when Cycle is remove: false
     }
 }
