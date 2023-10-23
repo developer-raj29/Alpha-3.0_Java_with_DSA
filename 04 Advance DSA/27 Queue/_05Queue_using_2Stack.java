@@ -10,6 +10,7 @@ public class _05Queue_using_2Stack {
         }
 
         // add O(n) + O(n) = 2n = O(n)
+
         public void add(int data) {
             while (!s1.isEmpty()) { // O(n)
                 s2.push(s1.pop());
