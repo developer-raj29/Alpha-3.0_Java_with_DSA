@@ -3,7 +3,7 @@ import java.util.ArrayDeque;// ArrayDeque package import
 // import java.util.Queue; // Queue package import
 import java.util.*; // ALL package import
 
-public class _04_03Queue_Using_JCF {
+public class _04Queue_Using_JCF {
     public static void main(String[] args) {
         // Queue<Integer> q = new LinkedList<>();
         Queue<Integer> q = new ArrayDeque<>();
