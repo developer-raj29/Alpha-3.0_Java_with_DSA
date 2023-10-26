@@ -6,7 +6,7 @@ public class _05_MIN_INDIAN_CoinsNotes {
     public static void main(String[] args) {
         Integer Coins_Notes[] = { 1, 2, 5, 10, 20, 50, 100, 500, 2000 };
 
-        // Lambda Function -> ShortForm and sort in Reverse Order
+        // Lambda Function -> ShortForm and sort in Reverse
         Arrays.sort(Coins_Notes, Comparator.reverseOrder());
 
         int CountOfCoins = 0;
@@ -27,7 +27,7 @@ public class _05_MIN_INDIAN_CoinsNotes {
         // MINMUM Coins and Notes are Used: 4
 
         for (int i = 0; i < Ans.size(); i++) {
-            System.out.print(Ans.get(i) + ", "); // 500, 50, 20, 20
+            System.out.print(Ans.get(i) + " "); // 500, 50, 20, 20
         }
         System.out.println();
     }
