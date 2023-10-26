@@ -22,7 +22,7 @@ public class _02Fractional_Knapsnap {
         int finalValue = 0;
         for (int i = ratio.length - 1; i >= 0; i--) {
             int idx = (int) ratio[i][0];
-            if (capacity >= Weight[idx]) {
+            if (capacity >= Weight[idx]) { // include full items
                 finalValue += Val[idx];
                 capacity -= Weight[idx];
             } else {
