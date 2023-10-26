@@ -5,8 +5,8 @@ public class _03MIN_Absolute_Diff {
         int A[] = { 1, 2, 3 };
         int B[] = { 2, 1, 3 };
 
-        Arrays.sort(A);
-        Arrays.sort(B);
+        Arrays.sort(A); // Sort ke denge Array A ko
+        Arrays.sort(B); // Sort ke denge Array B ko
 
         int Min_Diff = 0;
 

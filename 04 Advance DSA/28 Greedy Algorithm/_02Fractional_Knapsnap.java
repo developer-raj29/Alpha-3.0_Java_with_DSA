@@ -16,9 +16,10 @@ public class _02Fractional_Knapsnap {
         }
         // Ascending order
 
+        // Lambda Function -> ShortForm
         Arrays.sort(ratio, Comparator.comparingDouble(o -> o[1]));
 
-        int capacity = W;
+        int capacity = W; // capacity in kg
         int finalValue = 0;
         for (int i = ratio.length - 1; i >= 0; i--) {
             int idx = (int) ratio[i][0];

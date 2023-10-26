@@ -5,6 +5,7 @@ public class _04MAX_Length_ChainPairs {
     public static void main(String[] args) {
         int Pairs[][] = { { 5, 24 }, { 39, 60 }, { 5, 28 }, { 27, 40 }, { 50, 90 } };
 
+        // Lambda Function -> ShortForm
         Arrays.sort(Pairs, Comparator.comparingDouble(o -> o[1]));
 
         int ChainLen = 1;
