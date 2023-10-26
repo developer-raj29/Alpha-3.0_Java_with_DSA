@@ -23,6 +23,7 @@ public class _05_MIN_INDIAN_CoinsNotes {
             }
         }
         System.out.println("MINMUM Coins and Notes are Used: " + CountOfCoins);
+        // MINMUM Coins and Notes are Used: 4
 
         for (int i = 0; i < Ans.size(); i++) {
             System.out.print(Ans.get(i) + ", "); // 500, 50, 20, 20
