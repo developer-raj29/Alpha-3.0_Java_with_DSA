@@ -6,6 +6,7 @@ public class _05_MIN_INDIAN_CoinsNotes {
     public static void main(String[] args) {
         Integer Coins_Notes[] = { 1, 2, 5, 10, 20, 50, 100, 500, 2000 };
 
+        // Lambda Function -> ShortForm and sort in Reverse Order
         Arrays.sort(Coins_Notes, Comparator.reverseOrder());
 
         int CountOfCoins = 0;
