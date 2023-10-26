@@ -40,6 +40,9 @@ public class _01ActivitySelection {
         System.out.println("Maximum Activities: " + Max_Activity);
         for (int i = 0; i < ans.size(); i++) {
             System.out.println("Activity: " + ans.get(i) + " ");
+            /*
+             * Maximum Activities: 4, Activity: 0, Activity: 1, Activity: 3, Activity: 4
+             */
         }
         System.out.println();
     }
