@@ -5,8 +5,8 @@ public class _07Chocola_Problem {
     public static void main(String[] args) {
 
         // int n = 4, m = 6;
-        Integer costVer[] = { 2, 1, 3, 1, 4 }; // m - 1
-        Integer costHor[] = { 4, 1, 2 }; // n - 1
+        Integer costVer[] = { 3, 2, 1 }; // m - 1
+        Integer costHor[] = { 3, 2 }; // n - 1
 
         Arrays.sort(costVer, Collections.reverseOrder()); // sort in reverse order : 4, 3, 2, 1, 1
         Arrays.sort(costHor, Collections.reverseOrder()); // sort in reverse order : 4, 2, 1
