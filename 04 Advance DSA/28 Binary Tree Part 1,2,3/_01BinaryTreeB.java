@@ -30,6 +30,7 @@ public class _01BinaryTreeB {
         }
     }
 
+    // Pre-Order
     public static void preorder(Node root) { // O (n) Linear
         if (root == null) {
             return;
@@ -40,6 +41,7 @@ public class _01BinaryTreeB {
         preorder(root.right);
     }
 
+    // In-Order
     public static void inorder(Node root) { // O (n) Linear
         if (root == null) {
             return;
@@ -50,6 +52,7 @@ public class _01BinaryTreeB {
         inorder(root.right);
     }
 
+    // Post-Order
     public static void postorder(Node root) { // O (n) Linear
         if (root == null) {
             return;
@@ -73,7 +76,7 @@ public class _01BinaryTreeB {
             Node currNode = q.remove();
 
             if (currNode == null) {
-                System.out.print("#,");
+                System.out.println(" ");
 
                 if (q.isEmpty()) {
                     break;
@@ -93,7 +96,7 @@ public class _01BinaryTreeB {
     }
 
     public static void main(String[] args) {
-        int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
+        int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, 6, -1, -1, 7, -1, -1 };
         BinaryTree Tree = new BinaryTree();
         Node root = Tree.BuildTree(nodes);
         // System.out.println(root.data);
