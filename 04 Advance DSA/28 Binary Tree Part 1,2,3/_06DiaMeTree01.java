@@ -22,6 +22,7 @@ public class _06DiaMeTree01 {
         return Math.max(LH, RH) + 1;
     }
 
+    // Approch - 1
     public static int DiameterTree(Node root) { // O(n^2)
         if (root == null) {
             return 0;
@@ -37,6 +38,7 @@ public class _06DiaMeTree01 {
         return Math.max(selfDia, Math.max(LeftDia, RightDia));
     }
 
+    // Approch - 2
     static class Info {
         int Diam;
         int HT;
@@ -74,10 +76,10 @@ public class _06DiaMeTree01 {
         root.right = new Node(3);
         root.left.left = new Node(4);
         root.left.right = new Node(5);
-        root.right.left = new Node(6);
+        root.right.right = new Node(6);
 
-        // System.out.println(DiameterTree(root));
-        System.out.println(InfoDiameter(root).Diam);
-        System.out.println(InfoDiameter(root).HT);
+        System.out.println(DiameterTree(root));
+        // System.out.println(InfoDiameter(root).Diam);
+        // System.out.println(InfoDiameter(root).HT);
     }
 }
