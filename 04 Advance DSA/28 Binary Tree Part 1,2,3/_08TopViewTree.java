@@ -1,4 +1,4 @@
-// /*
+/*
 //  * 1. Create a class Node that represent nodes of B-T:
 //    - data: int
 //    - left: reference to the left child Node
@@ -50,7 +50,7 @@
 
 // 6. End of the program.
 
-//  */
+ */
 
 import java.util.*;
 import java.util.LinkedList;

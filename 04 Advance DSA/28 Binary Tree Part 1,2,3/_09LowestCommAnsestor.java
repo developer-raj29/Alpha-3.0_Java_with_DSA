@@ -98,7 +98,7 @@ public class _09LowestCommAnsestor {
         root.right.right = Ansestor.new Node(7);
 
         // System.out.println(Ansestor.LOWEST_COMMON_ANCESTOR(root, 4, 7).data);
-        System.out.println(Ansestor.LCA(root, 4, 7).data);
+        System.out.println(Ansestor.LCA(root, 4, 5).data);
 
     }
 }
