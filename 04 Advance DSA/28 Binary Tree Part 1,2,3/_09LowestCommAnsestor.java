@@ -56,18 +56,19 @@ public class _09LowestCommAnsestor {
         return LCA;
     }
 
-    public Node LCA(Node root, int n1, int n2) { // T.C = O(n) Linear time S.P = O(h) height
-        // base case
-        if (root == null) {
-            return null;
-        }
+    public Node LCA(Node root, int n1, int n2) { // T.C = O(n) Linear time S.C = O(h) height
 
-        if (root.data == n1 || root.data == n2) {
+        // base case
+        if (root == null || root.data == n1 || root.data == n2) {
             return root;
         }
 
         Node LeftAns = LCA(root.left, n1, n2);
         Node RightAns = LCA(root.right, n1, n2);
+
+        if (LeftAns != null && RightAns != null) {
+            return root;
+        }
 
         if (RightAns == null) {
             return LeftAns;
@@ -98,7 +99,7 @@ public class _09LowestCommAnsestor {
         root.right.right = Ansestor.new Node(7);
 
         // System.out.println(Ansestor.LOWEST_COMMON_ANCESTOR(root, 4, 7).data);
-        System.out.println(Ansestor.LCA(root, 4, 5).data);
+        System.out.println(Ansestor.LCA(root, 4, 6).data);
 
     }
 }
