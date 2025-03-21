@@ -24,7 +24,6 @@ public class _01IntroBST {
             // right subtree
             root.right = insert(root.right, val);
         }
-
         return root;
     }
 
@@ -32,7 +31,6 @@ public class _01IntroBST {
         if (root == null) {
             return;
         }
-
         inorder(root.left);
         System.out.print(root.data + " ");
         inorder(root.right);
@@ -45,7 +43,6 @@ public class _01IntroBST {
         for (int i = 0; i < value.length; i++) {
             root = insert(root, value[i]);
         }
-
         inorder(root);
         System.out.println();
     }
